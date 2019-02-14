@@ -1,3 +1,7 @@
+v0.0.4
+20190214
+1. fix a bug. when ' -rl' not set, went wrong.
+
 v0.0.3
 20190214
 1. add support for single end data

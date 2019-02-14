@@ -44,8 +44,8 @@ Extract some fastq reads from the beginning of the files. Author: Guanliang Meng
     parser.add_argument("-size_required", type=float, default=3,
         metavar="<float>", help="size required in Gigabase. [%(default)s]")
 
-    parser.add_argument("-rl", type=int, metavar="<int>", default='None',
-        help="read length required. discard the smaller ones, and cut the longer ones to this length [%(default)s]")
+    parser.add_argument("-rl", type=int, metavar="<int>", default=0,
+        help="read length required. discard the smaller ones, and cut the longer ones to this length")
 
     parser.add_argument("-gz", action="store_true", default=False,
         help="gzip output. [%(default)s]")
