@@ -38,14 +38,15 @@ There will be a command `extractfq` created under the same directory as your `pi
       -cache_num <int>      the cache number of reads before writing to the file,
                             to speed up. the larger of cache_num, the more memory
                             (default is ca. 2G) will be used. [1500000]
-   
+
 ## Author
 Guanliang MENG
 
 ## Citation
 This script is part of the package `MitoZ`, when you use the script in your work, please cite:
-    
-    MitoZ: A toolkit for mitochondrial genome assembly, annotation and visualization with NGS data. Guangliang Meng, Yiyuan Li, Chentao Yang, Shanlin Liu (in manuscript)
+
+    Guanliang Meng, Yiyuan Li, Chentao Yang, Shanlin Liu. MitoZ: A toolkit for mitochondrial genome assembly, annotation and visualization; doi: https://doi.org/10.1101/489955
+
 
 
 
