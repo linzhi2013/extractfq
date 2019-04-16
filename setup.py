@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="extractfq",
-    version="0.0.4",
+    version="0.0.5",
     author='Guanliang Meng',
-    author_email='mengguanliang@foxmail.com',
-    description="Extract some fastq reads from the beginning of the files",
+    author_email='linzhi2012@gmail.com',
+    description="Extract some fastq reads (PE/SE) from the beginning of the files",
     long_description=long_description,
     long_description_content_type="text/markdown",
     python_requires='>=3',

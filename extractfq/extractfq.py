@@ -26,7 +26,7 @@ import gzip
 
 def get_para():
     description = '''
-Extract some fastq reads from the beginning of the files. Author: Guanliang Meng, see https://github.com/linzhi2013/extractfq. This script is part of the package `MitoZ`, when you use the script in your work, please cite: Guanliang Meng, Yiyuan Li, Chentao Yang, Shanlin Liu. MitoZ: A toolkit for mitochondrial genome assembly, annotation and visualization; doi: https://doi.org/10.1101/489955.
+Extract some fastq reads (PE/SE) from the beginning of the files. Author: Guanliang Meng, see https://github.com/linzhi2013/extractfq. This script is part of the package `MitoZ`, when you use the script in your work, please cite: Guanliang Meng, Yiyuan Li, Chentao Yang, Shanlin Liu. MitoZ: a toolkit for animal mitochondrial genome assembly, annotation and visualization. Nucleic Acids Research, https://doi.org/10.1093/nar/gkz173
 
     v0.0.3: single-end data support.
 
@@ -228,6 +228,11 @@ def main():
     args = get_para()
 
     if args.fq1 and args.fq2:
+        if not args.outfq1:
+            sys.exit('Please specify -outfq1 option!')
+        if not args.outfq2:
+            sys.exit('Please specify -outfq2 option!')
+
         extract_fq(fq1=args.fq1, fq2=args.fq2, outfq1=args.outfq1,
                    outfq2=args.outfq2, size_required=args.size_required,
                    rl_required=args.rl, gz=args.gz, cache_num=args.cache_num)

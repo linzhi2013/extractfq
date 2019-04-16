@@ -1,3 +1,10 @@
+
+
+v0.0.4
+20190416
+1. fix a bug, when provide two -outfq2 options but missing -outfq1.
+
+
 v0.0.4
 20190214
 1. fix a bug. when ' -rl' not set, went wrong.
