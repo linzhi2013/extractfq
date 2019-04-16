@@ -233,6 +233,9 @@ def main():
         if not args.outfq2:
             sys.exit('Please specify -outfq2 option!')
 
+        if args.outfq1 == args.outfq2:
+            sys.exit(' -outfq1 and -outfq2 options can not be same!')
+
         extract_fq(fq1=args.fq1, fq2=args.fq2, outfq1=args.outfq1,
                    outfq2=args.outfq2, size_required=args.size_required,
                    rl_required=args.rl, gz=args.gz, cache_num=args.cache_num)
