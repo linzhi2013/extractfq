@@ -27,9 +27,6 @@ import gzip
 def get_para():
     description = '''
 Extract some fastq reads (PE/SE) from the beginning of the files. Author: Guanliang Meng, see https://github.com/linzhi2013/extractfq. This script is part of the package `MitoZ`, when you use the script in your work, please cite: Guanliang Meng, Yiyuan Li, Chentao Yang, Shanlin Liu. MitoZ: a toolkit for animal mitochondrial genome assembly, annotation and visualization. Nucleic Acids Research, https://doi.org/10.1093/nar/gkz173
-
-    v0.0.3: single-end data support.
-
     '''
     parser = argparse.ArgumentParser(description=description)
 
